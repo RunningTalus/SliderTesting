@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JSLintConfiguration">
+    <option indent="2" />
+    <option maxerr="50" />
+    <option maxlen="78" />
+    <option predef="browser : true, continue: true,&#10;  devel  : true, indent  : 2,    maxerr  : 50,&#10;  newcap : true, nomen   : true, vars    : true,&#10;  white  : true" />
+  </component>
+</project>
