@@ -6,22 +6,31 @@
 }
 
 body {
+  font-family      : sans-serif;
+}
 
-  font-family      : sans-serif; }
-
+/* gallery height, as percentage of width */
 .gallery {
-  background : #FFFFFF;
+  background-color : #ECF0F1;
+  padding-bottom: 33.3%;
 }
 
+/* viewport inherit size from gallery */
+.gallery .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
+
+/* cell inherit height from gallery */
 .gallery-cell {
-  width             : 66%;
-  height            : 400px;
+  height: 100%;
+  width: 80%;
   margin-right      : 10px;
-  background        : #E74C3C;
+  background-color  : #E74C3C;
   counter-increment : gallery-cell;
+
 }
 
-/* cell number */
 .gallery-cell:before {
   display     : block;
   text-align  : center;
@@ -30,3 +39,4 @@ body {
   font-size   : 80px;
   color       : #ECF0F1;
 }
+
