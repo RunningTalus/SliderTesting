@@ -12,26 +12,37 @@
 
 var elem;
 
-elem = document.querySelector('.gallery-cell');
+elem = document.querySelector('.gallery');
 
 var flkty = new Flickity( elem, {
-  // options
-  accessibility: true,
-  autoPlay   : true,
-  cellAlign  : 'center',
-  contain    : true,
-  draggable: true,
-  freeScroll : true,
-  freeScrollFriction: 0.03,
-  imagesLoaded: true,
-  initialIndex: 3,
-  lazyLoad   : 2,
-  pageDots   : true,
-  percentPosition : true,
-  prevNextButtons : false,
-  resize: true,
-  rightToLeft: false,
-  setGallerySize : true,
-  wrapAround : true
-});
 
+  /* Setup option */
+  accessibility  : true,
+  initialIndex   : 0,
+  resize         : true,
+  setGallerySize : false,
+
+  /* Cell position options */
+  cellAlign      : 'center',
+  //contain         : true,
+    // contain and wrapAround cancel themselves out.
+  imagesLoaded    : true,
+  percentPosition : true,
+  //rightToLeft     : false,
+
+  /* Behavior options */
+  //asNavFor
+  autoPlay           : 1000,
+  draggable          : true,
+  freeScroll         : true,
+  freeScrollFriction : 0.03,
+  //lazyLoad           : 2,
+  //selectedAttraction
+  //watchCSS
+  wrapAround : true,
+
+  /* UI options */
+  //arrowShape
+  pageDots        : true,
+  prevNextButtons : false
+});
