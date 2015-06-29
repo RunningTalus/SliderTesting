@@ -27,6 +27,8 @@ body {
   display: block;
   max-height: 100%;
   margin: 0 auto;
+  /* If using natural size of images for the size of cells, set a min-width to cells have a size when images are not loaded. */
+  min-width: 250px;
   max-width: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
