@@ -10,14 +10,15 @@
 
   <body>
 
-  <h1>Flickity - freeScroll</h1>
+  <h1>Flickity - freeScroll & contain</h1>
 
   <!-- Flickity HTML init -->
 
   <!-- freeScroll : Enables content to be freely scrolled and flicked without aligning cells to an end position. -->
+  <!-- contain : Contains cells to gallery element to prevent excess scroll at beginning or end. Has no effect if wrapAround: true.-->
 
   <div class="gallery js-flickity"
-       data-flickity-options='{ "freeScroll": true }'>
+       data-flickity-options='{ "freeScroll": true, "contain": true }'>
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
