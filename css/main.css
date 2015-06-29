@@ -22,6 +22,7 @@ body {
   background: #333333;
 }
 
+/* fade in image when loaded */
 .gallery-cell-image {
   display: block;
   max-height: 100%;

@@ -10,15 +10,20 @@
 
   <div>
   <h1>Flickity</h1>
-  <h2>/lazyLoad/</h2>
+  <h2>/lazyLoad/ /initialIndex/</h2>
     <!-- Loads cell images when a cell is selected. -->
     <!-- Set the image's URL to load with data-flickity-lazyload. -->
 
+    <!-- load images in selected cell -->
+    <!-- ...and next 2 cells -->
+    <!-- ...and previous 2 cells -->
 
+    <!-- After loading the image, Flickity will add flickity-lazyloaded class to the image, or flickity-lazyerror to a broken image. -->
+    <!-- You can use this class to add a transition when images are loaded. -->
 
   <!-- Flickity HTML init -->
   <div class="gallery js-flickity"
-       data-flickity-options='{ "lazyLoad": true }'>
+       data-flickity-options='{ "lazyLoad":2, "initialIndex":1 }'>
       <!-- lazyloads image in selected cell -->
     <div class="gallery-cell">
       <img class="gallery-cell-image"
