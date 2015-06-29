@@ -17,7 +17,7 @@ body { font-family: sans-serif; }
   width: 80%;
   height: 500px;
   margin-right: 10px;
-  background: #FFEFD5;
+  background: #FFA500;
   counter-increment: gallery-cell;
 }
 

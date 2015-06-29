@@ -10,15 +10,17 @@
 
   <body>
   <h1>Flickity</h1>
-  <h2>/autoPlay</h2>
+  <h2>/autoPlay/ 1500</h2>
 
   <!-- /autoPlay/ Automatically advances to the next cell. -->
     <!-- Auto-playing will pause when mouse is hovered over, and resume when mouse is hovered off. -->
     <!-- Auto-playing will stop when the gallery is clicked or a cell is selected. -->
+      <!--  advance cells every {Number} milliseconds -->
+      <!--  1500 will advance cells every 1.5 seconds -->
 
   <!-- Flickity HTML init -->
   <div class="gallery js-flickity"
-       data-flickity-options='{ "autoPlay": true}'>
+       data-flickity-options='{ "autoPlay": 1500}'>
 
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
