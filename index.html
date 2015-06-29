@@ -9,18 +9,17 @@
   </head>
 
   <body>
-
-
   <h1>Flickity</h1>
-  <h2>/freeScroll/ /wrapAround/</h2>
+  <h2>/autoPlay</h2>
 
-  <!-- Enable freeScroll and wrapAround and you can flick forever-->
-  <!-- /freeScroll/ Enables content to be freely scrolled and flicked without aligning cells to an end position. -->
-  <!-- /wrapAround/ At the end of cells, wrap-around to the other end for infinite scrolling. -->
+  <!-- /autoPlay/ Automatically advances to the next cell. -->
+    <!-- Auto-playing will pause when mouse is hovered over, and resume when mouse is hovered off. -->
+    <!-- Auto-playing will stop when the gallery is clicked or a cell is selected. -->
 
   <!-- Flickity HTML init -->
   <div class="gallery js-flickity"
-       data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+       data-flickity-options='{ "autoPlay": true}'>
+
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
