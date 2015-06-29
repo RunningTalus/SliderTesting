@@ -21,7 +21,7 @@ body {
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background: #7FF000;
+  background: #FF69B4;
   counter-increment: gallery-cell;
 }
 
@@ -32,5 +32,5 @@ body {
   content: counter(gallery-cell);
   line-height: 200px;
   font-size: 80px;
-  color: #EEEEEE;
+  color: #FFFFFF;
 }
