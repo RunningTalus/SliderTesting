@@ -13,40 +13,7 @@ body { font-family: sans-serif; }
   background: #EEEEEE;
 }
 
-/* enable flickity by default */
-.gallery:after {
-  content: 'flickity';
-  display: none;
-  /* hide :after */
-}
-
-@media screen and ( min-width: 768px ) {
-  /* disable Flickity for large devices */
-  .gallery:after {
-    content: '';
-  }
-}
-
-.gallery-cell {
-  width: 80%;
-  height: 500px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  background: #FF00FF;
-  counter-increment: gallery-cell;
-}
-
-/* no margin bottom when Flickity enabled */
-.flickity-enabled .gallery-cell {
-  margin-bottom: 0;
-}
-
-/* cell number */
-.gallery-cell:before {
+.gallery img {
   display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: #FFFFFF;
+  height: 400px;
 }
