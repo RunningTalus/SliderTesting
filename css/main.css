@@ -1,6 +1,4 @@
-/*
-main.css
-*/
+/* main.css */
 
 /* external css: flickity.css */
 
@@ -9,28 +7,13 @@ main.css
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-}
+body { font-family: sans-serif; }
 
 .gallery {
   background: #EEEEEE;
 }
 
-.gallery-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #FFFF00;
-  counter-increment: gallery-cell;
-}
-
-/* cell numbering */
-.gallery-cell:before {
+.gallery img {
   display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: #FFFFFF;
+  height: 500px;
 }

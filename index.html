@@ -10,23 +10,28 @@
 
   <body>
 
-  <h1>Flickity - freeScroll, contain, prevNextButtons, pageDots</h1>
+  <h1>Flickity - imagesLoaded</h1>
 
   <!-- Flickity HTML init -->
 
-  <!-- freeScroll : Enables content to be freely scrolled and flicked without aligning cells to an end position. -->
-  <!-- contain : Contains cells to gallery element to prevent excess scroll at beginning or end. Has no effect if wrapAround: true. -->
-  <!-- disable previous & next buttons and dots -->
-  <!-- prevNextButtons: false -->
-  <!-- pageDots: false -->
+  <!-- imagesLoaded : Unloaded images have no size, which can throw off cell positions. To fix this, the imagesLoaded option re-positions cells once their images have loaded. -->
+
+  <!-- imagesLoaded requires the flickity-imagesloaded package. It already is included with flickity.pkgd.js, but not with Flickity as a stand-alone package. If you are using Browserify or RequireJS without flickity.pkgd.js, you need to install and require flickity-imagesloaded separately. See details in Extras. -->
 
   <div class="gallery js-flickity"
-       data-flickity-options='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
+       data-flickity-options='{ "imagesLoaded": true}'>
+    <img src="https://unsplash.imgix.net/photo-1429966163023-c132bc887fdd?fit=crop&fm=jpg&h=600&q=75&w=1050"
+         alt="tibetan prayer flags">
+    <img src="https://ununsplash.imgix.net/photo-1429547584745-d8bec594c82e?fit=crop&fm=jpg&q=75&w=1050"
+         alt="Macchu Piccu, Peru">
+    <img src="https://unsplash.imgix.net/photo-1429198739803-7db875882052?fit=crop&fm=jpg&h=1575&q=75&w=1050"
+         alt="blowing leaves with bokeh">
+    <img src="https://ununsplash.imgix.net/photo-1429616588302-fec569e203ce?fit=crop&fm=jpg&h=700&q=75&w=1050"
+         alt="blue placid lake and sky">
+    <img src="https://unsplash.imgix.net/photo-1428452932365-4e7e1c4b0987?fit=crop&fm=jpg&h=700&q=75&w=1050"
+         alt="lilac dusk over mountains">
+    <img src="https://unsplash.imgix.net/photo-1422207109431-97544339f995?fit=crop&fm=jpg&h=725&q=75&w=1050"
+         alt="Coffea arabica seeds">
   </div>
 
     <!-- BEGIN scripts -->
