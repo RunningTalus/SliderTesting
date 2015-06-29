@@ -7,13 +7,33 @@
   box-sizing: border-box;
 }
 
-body { font-family: sans-serif; }
-
-.gallery {
-  background: #EEEEEE;
+body {
+  font-family: sans-serif;
 }
 
-.gallery img {
+.gallery {
+  background: #FAFAFA;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 500px;
+  margin-right: 10px;
+  background: #333333;
+}
+
+.gallery-cell-image {
   display: block;
-  height: 400px;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.gallery-cell-image.flickity-lazyloaded,
+.gallery-cell-image.flickity-lazyerror {
+  opacity: 1;
 }
