@@ -1,43 +1,36 @@
-/* external css: main.css */
+/*
+main.css
+*/
+
+/* external css: flickity.css */
 
 * {
-  -webkit-box-sizing : border-box;
-  box-sizing         : border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family      : sans-serif;
+  font-family: sans-serif;
 }
 
-/* gallery height, as percentage of width */
 .gallery {
-  background-color : #ECF0F1;
-  padding-bottom: 33.3%;
+  background: #EEEEEE;
 }
 
-/* viewport inherit size from gallery */
-.gallery .flickity-viewport {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-/* cell inherit height from gallery */
 .gallery-cell {
-  height: 100%;
-  width: 80%;
-  margin-right      : 10px;
-  background-color  : #E74C3C;
-  counter-increment : gallery-cell;
-
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #7FF000;
+  counter-increment: gallery-cell;
 }
 
+/* cell numbering */
 .gallery-cell:before {
-  display     : block;
-  text-align  : center;
-  content     : counter(gallery-cell);
-  line-height : 200px;
-  font-size   : 80px;
-  color       : #ECF0F1;
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: #EEEEEE;
 }
-
