@@ -10,18 +10,20 @@
 
   <body>
   <h1>Flickity</h1>
-  <h2>/autoPlay/ 1500</h2>
+  <h2>/watchCSS/ - Flickity enabled when window width is less than 768px</h2>
 
-  <!-- /autoPlay/ Automatically advances to the next cell. -->
-    <!-- Auto-playing will pause when mouse is hovered over, and resume when mouse is hovered off. -->
-    <!-- Auto-playing will stop when the gallery is clicked or a cell is selected. -->
-      <!--  advance cells every {Number} milliseconds -->
-      <!--  1500 will advance cells every 1.5 seconds -->
+  <!-- You can enable and disable Flickity with CSS. -->
+  <!-- watchCSS option watches the content of :after of the gallery element. -->
+  <!-- Flickity is enabled if :after content is 'flickity'. -->
+  <!-- IE8 and Android 2.3 do not support watching :after. -->
+  <!-- Flickity will be disabled when watchCSS: true. -->
+  <!-- Set watchCSS: 'fallbackOn' to enable Flickity for these browsers. -->
 
   <!-- Flickity HTML init -->
   <div class="gallery js-flickity"
-       data-flickity-options='{ "autoPlay": 1500}'>
-
+       data-flickity-options='{ "watchCSS":true }'>
+    <!-- enable Flickity in CSS when element:after { content: 'flickity' }-->
+    <!-- Flickity is disabled for IE8 and Android 2.3 -->
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
     <div class="gallery-cell"></div>
