@@ -16,10 +16,10 @@ body {
 }
 
 .gallery-cell {
-  width: 66%;
+  width: 100%;
   height: 500px;
   margin-right: 10px;
-  background: #333333;
+  background: #FFFFFF;
 }
 
 /* fade in image when loaded */
